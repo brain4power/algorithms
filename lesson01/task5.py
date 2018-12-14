@@ -1,0 +1,5 @@
+first = str(input('Введите первую букву: '))
+second = str(input('Введите вторую букву: '))
+print('Первая буква на месте: {}'.format(ord(first) - 96))
+print('Вторая буква на месте: {}'.format(ord(second) - 96))
+print('Букв между ними: {}'.format(abs(ord(second) - ord(first) - 1)))
