@@ -61,6 +61,14 @@ def beauty_output(array):
     return ''.join(array)
 
 
-print(add_my('A2', 'C4F'))
-print(my_multiply('A2', 'C4F'))
-print(beauty_output(my_multiply('A2', 'C4F')))
+user_input = input('Введите числа в 16-ричной системе счисления и требуемую операцию между ними, отделив ее пробелами. '
+                   'Например, A2 + C4F: ').upper()
+user_input = user_input.split()
+if user_input[1] == '+':
+    print(f'Результат операции: {add_my(user_input[0], user_input[2])}')
+elif user_input[1] == '*':
+    print(f'Результат операции: {my_multiply(user_input[0], user_input[2])}')
+
+# print(add_my('A2', 'C4F'))
+# print(my_multiply('A2', 'C4F'))
+# print(beauty_output(my_multiply('A2', 'C4F')))
